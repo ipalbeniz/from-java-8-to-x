@@ -5,9 +5,9 @@ The repository is structured to help developers understand and explore how diffe
 
 # Structure
 The examples are organized into packages named `java<version>`, where each package corresponds to a specific version of Java. For instance:
-- java9: covers jshell, collections factory methods and other features
+- java9: covers jshell, collections factory methods, and other features
 ...
-- java23: highlights the latest features introduced in Java 23.
+- java24: highlights the latest features introduced in Java 24.
 
 Each package contains code examples, explanations, and resources relevant to the specific version.
 

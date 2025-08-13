@@ -6,20 +6,20 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.5</version>
+		<version>3.5.4</version>
 		<relativePath/>
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>java-8-to-23</artifactId>
+	<artifactId>java-8-to-24</artifactId>
 	<version>1.0-SNAPSHOT</version>
 
 	<name>java-examples</name>
-	<description>Java examples from 8 to 23</description>
+	<description>Java examples from 8 to 24</description>
 
 	<properties>
-		<java.version>23</java.version>
-		<commons-io.version>2.17.0</commons-io.version>
+		<java.version>24</java.version>
+		<commons-io.version>2.20.0</commons-io.version>
 	</properties>
 
 	<dependencies>
@@ -52,15 +52,15 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<excludes>
-						<exclude>
+					<annotationProcessorPaths>
+						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
+						</path>
+					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
 		</plugins>
